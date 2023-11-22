@@ -1,0 +1,43 @@
+{
+	"__default__":
+	{
+		"job-name": "Snakemake",
+		"ntasks": 8,
+		"mem": "32gb",
+		"time": "12:00:00",
+		"output": "logs/slurm_%x.out"
+	},
+	"filter":
+	{
+		"job-name": "filter",
+		"mem": "64gb"
+	},
+	"learnError":
+	{
+		"job-name": "learnError"
+	},
+	"dereplicate":
+	{
+		"job-name": "dereplicate"
+	},
+	"removeChimeras":
+	{
+		"job-name": "removeChimeras"
+	},
+	"taxonomy":
+	{
+		"job-name": "taxonomy",
+		"mem": "120gb",
+		"ntasks": 16
+	},
+	"alignment":
+	{
+		"job-name": "alignment"
+	},
+	"tree":
+	{
+		"job-name": "tree",
+		"mem": "120gb",
+		"ntasks": 16
+	}
+}

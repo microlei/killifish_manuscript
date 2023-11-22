@@ -1,0 +1,41 @@
+ASV,SC_fish_enriched,Taxonomy,NBH_abund,SC_abund,expected
+ASV2,TRUE,f:Vibrionaceae,0.0014669537272596167,0.001312508732323695,no
+ASV5,FALSE,g:Vibrio,0.003176669929976413,0.003746797656529784,no
+ASV10,TRUE,f:Mycoplasmataceae,0,4.944550399095854e-5,yes
+ASV17,FALSE,f:Vibrionaceae,0,0,no
+ASV22,FALSE,Lactobacillus intermedius,9.999333377774815e-5,0,yes
+ASV23,FALSE,g:Aliivibrio,0,0,no
+ASV24,FALSE,f:Desulfovibrionaceae,0,0,no
+ASV26,TRUE,g:Mycoplasma,0,0,no
+ASV27,TRUE,g:Marinobacterium,0,8.758958521445925e-4,yes
+ASV28,FALSE,Psychromonas kaikoae/marina,0,0.0012025428424920683,no
+ASV30,FALSE,g:Marivita,1.4482846516585755e-4,0,yes
+ASV33,FALSE,g:Brevinema,0,0,no
+ASV43,FALSE,g:Photobacterium,3.2814957709172913e-4,8.344667242556455e-4,no
+ASV47,FALSE,g:Candidatus_Bacilloplasma,0,0,no
+ASV52,FALSE,g:Ascidiaceihabitans,0,0,no
+ASV64,FALSE,f:Desulfocapsaceae,6.620100357056841e-4,0,yes
+ASV67,FALSE,Yangia pacifica,0,0,no
+ASV79,TRUE,g:Propionigenium,0,0,no
+ASV80,FALSE,g:Roseobacter,1.0427649491941744e-4,0,yes
+ASV82,FALSE,g:Rubripirellula,0,3.0793804561421716e-4,no
+ASV85,TRUE,g:Thiohalocapsa,0,3.3829229165345477e-4,yes
+ASV91,FALSE,Enterococcus cecorum,0,0,no
+ASV104,FALSE,g:Cyanobium_PCC-6307,0.003970000890747678,0.04242592419568747,no
+ASV106,FALSE,c:Gammaproteobacteria,4.222675151784344e-4,0,yes
+ASV113,FALSE,g:Sulfurovum,4.7734346048366463e-4,0,yes
+ASV133,FALSE,f:Intrasporangiaceae,0,0,no
+ASV145,FALSE,g:Exiguobacterium,0,0,no
+ASV201,FALSE,Ahrensia kielensis/marina,0,0,no
+ASV221,FALSE,Sulfitobacter dubius,0,0,no
+ASV225,FALSE,Labrenzia aggregata,0,0,no
+ASV227,FALSE,Tropicimonas aquimaris,0,0,no
+ASV229,FALSE,f:Gimesiaceae,3.3100501785284203e-4,0,yes
+ASV238,FALSE,f:Rhizobiaceae,0,0,no
+ASV241,FALSE,Ilumatobacter nonamiensis,0,0,no
+ASV246,FALSE,g:Halioglobus,8.910446533787604e-4,0,yes
+ASV261,FALSE,f:Nitriliruptoraceae,0,0,no
+ASV328,FALSE,g:Methyloceanibacter,5.213824745970872e-5,0,yes
+ASV503,FALSE,g:Planococcus,0,0,no
+ASV513,FALSE,f:Caldilineaceae,0,0,no
+ASV616,FALSE,c:KD4-96,0,0,no

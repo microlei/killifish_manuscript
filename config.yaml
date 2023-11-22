@@ -1,0 +1,40 @@
+# Global configurations
+# This file contains all the parameters needed to update the workflow
+
+
+# the path to the data
+path: "/vortexfs1/scratch/lma/KillifishMicrobiome/"
+
+# parameters for dada2::filterAndTrim
+
+trimLeft:
+        - 0
+        - 0
+truncLen:
+        - 240
+        - 240
+truncQ: 2
+maxN: 0
+maxEE:
+        - 1
+        - 1
+multithread: TRUE
+
+# parameters for dada2::learnErrors
+# the default number of bases is 1e+08, but that might not cover many samples, so sometimes I change it to 1e+09 or higher
+nbases: 1e+08
+
+# parameters for trimming dereplicated reads in dereplicate.R
+# After merging F+R and checking the distribution of read lengths, you can exclude read lengths that are not within +/- derepRange of the mode.
+# Default should not exclude anything, but if you're expecting a really narrow range of read lengths, change it
+derepRange: 100
+
+# parameters for dada2::removeBimeraDenovo
+method: 'consensus'
+
+# parameters for dada2::assignTaxonomy and dada2:addSpecies
+# These paths need to be changed!
+
+taxadb: "/vortexfs1/home/lma/silvadbs/138/silva_nr_v138_train_set.fa.gz"
+speciesdb: "/vortexfs1/home/lma/silvadbs/138/silva_species_assignment_v138.fa.gz"
+minBoot: 50

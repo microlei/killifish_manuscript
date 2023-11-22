@@ -1,0 +1,90 @@
+---
+title: "Environmental and Population influences on Atlantic Killifish Gut Microbiomes"
+author: "Lei Ma"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
+output: github_document
+---
+
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, include=FALSE)
+```
+
+## Abstract
+
+The Atlantic killifish, Fundulus heteroclitus, is an abundant estuarine fish broadly distributed along the eastern coast of the U.S. which has repeatedly evolved tolerance to otherwise lethal levels of aromatic hydrocarbon exposure. This tolerance is linked to reduced activation of the aryl hydrocarbon receptor (AHR) signaling pathway. In other animals, the AHR has been shown to influence the gastrointestinal-associated microbial community, or gut microbiome, particularly when activated by the model toxic pollutant 3,3',4,4',5-pentachlorobiphenyl (PCB-126) and other dioxin-like compounds. In order to understand host population and PCB-126 exposure effects on killifish gut microbiota, we sampled two populations of wild fish, one from from a PCB-exposed environment (New Bedford Harbor) and the other from a pristine location (Scorton Creek), as well as laboratory reared F2 generation fish originating from each of these populations. We examined the bacteria and archaea associated with the gut of these fish using amplicon sequencing of small subunit ribosomal RNA genes and found that fish living in the PCB polluted site had high microbial alpha and beta diversity and an altered network structure compared to fish from the pristine site. These differences were not present in laboratory reared F2 fish which originated from the PCB polluted environment, though differences were also present between wild and lab-based F2 fish from the pristine site. Microbial compositional differences existed between the wild and lab reared fish, with the wild dominated by Vibrionaceae and the lab reared by Enterococceae. These results suggest that killifish habitat and/or environmental conditions has a stronger influence on the killifish gut microbiome compared to population or hereditary-based influences. Atlantic killifish are important eco-evolutionary model organism and this work reveal their importance for exploring host-environmental-microbiome dynamics.
+
+## Directory description
+
+### Data
+
+Contains the metadata and data files that have been generated during analysis phase. Ignores large files (like .rds files) used in some scripts and notebooks due to github storage limits.
+
+### Logs
+
+Logs of the Snakemake dada2 data processing of the raw sequence reads
+
+### Output
+
+Output of the Snakemake dada2 data processing, including the ASV table and some intermediate products. Does not include the quality profiles of the samples.
+
+### Scripts
+
+R scripts used in the Snakemake workflow
+
+### Figures
+
+Contains tables and figures from the manuscript. Includes intermediate products used to generate composite figures.
+
+### Code
+
+Contains code used in the analysis phase (after dada2 processing) to generate figures and tables. Code used to generate figures are labeled "plot_figure_[x].R". Others are intermediate or pre-processing scripts.
+
+## Dependencies
+
+For the dada2 Snakemake pipeline
+
+* See my [MiSeq](https://github.com/microlei/apprill-miseq) processing workflow for dependencies
+
+For the data analysis and manuscript
+
+* See session info below
+
+## Session Info
+```{r libraries}
+#misc
+library(here)
+
+#data manipulations
+library(tidyverse)
+library(readr)
+library(broom)
+
+#plotting stuff
+library(ggplot2)
+library(cowplot)
+library(patchwork)
+library(RColorBrewer)
+library(ggrepel)
+
+#preprocessing
+library(phyloseq)
+library(vegan)
+library(decontam)
+library(skimr)
+library(speedyseq)
+library(igraph)
+library(tidygraph)
+library(graphlayouts)
+
+#analysis
+library(corncob)
+library(microbiome)
+library(SpiecEasi)
+library(VennDiagram)
+library(NetSwan)
+```
+
+```{r session, message=TRUE, include=TRUE}
+sessionInfo()
+```
+

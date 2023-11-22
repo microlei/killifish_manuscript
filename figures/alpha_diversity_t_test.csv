@@ -1,0 +1,19 @@
+measurement,group1,group2,p.value,significant
+Observed,New Bedford Harbor wild,New Bedford Harbor F2,3.853757817886099e-23,TRUE
+Observed,Scorton Creek F2,New Bedford Harbor F2,0.7250045736724765,FALSE
+Observed,Scorton Creek F2,New Bedford Harbor wild,7.89619256321341e-12,TRUE
+Observed,Scorton Creek wild,New Bedford Harbor F2,0.7250045736724765,FALSE
+Observed,Scorton Creek wild,New Bedford Harbor wild,3.7609974851551457e-20,TRUE
+Observed,Scorton Creek wild,Scorton Creek F2,0.7250045736724765,FALSE
+Shannon,New Bedford Harbor wild,New Bedford Harbor F2,2.371275024688403e-31,TRUE
+Shannon,Scorton Creek F2,New Bedford Harbor F2,0.32257323481870787,FALSE
+Shannon,Scorton Creek F2,New Bedford Harbor wild,4.1382179518584686e-17,TRUE
+Shannon,Scorton Creek wild,New Bedford Harbor F2,0.25336210312653556,FALSE
+Shannon,Scorton Creek wild,New Bedford Harbor wild,2.369027595301252e-26,TRUE
+Shannon,Scorton Creek wild,Scorton Creek F2,0.8914896657287124,FALSE
+Simpson,New Bedford Harbor wild,New Bedford Harbor F2,2.1274628783964525e-31,TRUE
+Simpson,Scorton Creek F2,New Bedford Harbor F2,0.17270744485974354,FALSE
+Simpson,Scorton Creek F2,New Bedford Harbor wild,9.294891201783787e-17,TRUE
+Simpson,Scorton Creek wild,New Bedford Harbor F2,3.774520051201324e-5,TRUE
+Simpson,Scorton Creek wild,New Bedford Harbor wild,1.7513454814027656e-19,TRUE
+Simpson,Scorton Creek wild,Scorton Creek F2,0.17270744485974354,FALSE
