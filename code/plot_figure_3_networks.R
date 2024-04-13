@@ -104,5 +104,6 @@ p_deg_dist <- plot_grid(p_sc_w, p_nbh_w, p_sc_f2, p_nbh_f2, ncol=2, labels= c("E
 
 # Combine plots
 network_plot <- plot_grid(all_net, p_deg_dist, ncol = 1)
-ggsave(network_plot, filename=here("figures/plot_networks_combined.png"), width=5, height=8, units = "in")
+ggsave(network_plot, filename=here("figures/figure_3.pdf"), device="pdf", width=5, height=8, units = "in")
+ggsave(network_plot, filename=here("figures/figure_3.tiff"), device="tiff", width=5, height=8, units = "in")
 

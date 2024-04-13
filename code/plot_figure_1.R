@@ -12,4 +12,4 @@ pca_full <- plot_grid(wild_subplot, F2_subplot, ncol=1, labels = c("C", "D")) %>
 # the combined plot
 plot_grid(p_full, pca_full, ncol=1)
 
-ggsave(filename=here("figures/figure_1.png"),width=8, height=11, units = "in")
+ggsave(filename=here("figures/figure_1.pdf"), device="pdf", width=8, height=11, units = "in")

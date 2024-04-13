@@ -25,7 +25,7 @@ ps.zcomp <- transform(ps.zcomp, "clr")
 # RDA with no other options is the same as CA/PCA
 pca <- rda(t(otu_table(ps.zcomp)))
 # Join the sample scores with the metadata
-pca.df <- scores(pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% select(sample, site, wild_or_F2, fishType))
+pca.df <- scores(pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% dplyr::select(sample, site, wild_or_F2, fishType))
 # Join the species (ASV) loadings with the taxonomy
 pca.species <- scores(pca, display="species") %>% data.frame() %>% rownames_to_column(var="ASV") %>% left_join(taxonomy)
 # get summary
@@ -50,7 +50,7 @@ pca.plot <- pca.plot +
 
 wild_subplot_pca <- ps.zcomp %>% subset_samples(wild_or_F2=="wild") %>% otu_table() %>% t() %>% rda()
 wild_summary <- summary(wild_subplot_pca)
-wild_subplot <- scores(wild_subplot_pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% select(sample, site, wild_or_F2, fishType)) %>% 
+wild_subplot <- scores(wild_subplot_pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% dplyr::select(sample, site, wild_or_F2, fishType)) %>% 
   ggplot(aes(x=PC1, y=PC2)) +
   geom_point(aes(color=fishType), size=4, position="jitter") +
   scale_color_manual(name="", values=cols.fishType) + theme(legend.position = "none") + 
@@ -60,7 +60,7 @@ wild_subplot <- scores(wild_subplot_pca, display="sites") %>% data.frame() %>% r
 
 F2_subplot_pca <- ps.zcomp %>% subset_samples(wild_or_F2=="F2") %>% otu_table() %>% t() %>% rda()
 F2_summary <- summary(F2_subplot_pca)
-F2_subplot <- scores(F2_subplot_pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% select(sample, site, wild_or_F2, fishType)) %>% 
+F2_subplot <- scores(F2_subplot_pca, display="sites") %>% data.frame() %>% rownames_to_column(var="sample") %>% left_join(metadata %>% dplyr::select(sample, site, wild_or_F2, fishType)) %>% 
   ggplot(aes(x=PC1, y=PC2)) +
   geom_point(aes(color=fishType), size=4, position="jitter") +
   scale_color_manual(name="", values=cols.fishType) + theme(legend.position = "none") + 

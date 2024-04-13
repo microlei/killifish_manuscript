@@ -21,4 +21,4 @@ p_bar_full <- readRDS(here("data/processed/p_bar_full.rds"))
 p_vibrio <- ggdraw() + draw_image(here("figures/plot_vibrio_pie.png"))
 
 p_combined <- plot_grid(p_venn, p_vibrio, labels=c("A", "B")) %>% plot_grid(p_bar_full, nrow=2, labels=c("", "C"))
-ggsave(p_combined, filename = here("figures/plot_venn_bar_pie.png"), width=6, height=5, unit="in")
+ggsave(p_combined, filename = here("figures/figure_2.pdf"), width=6, height=5, unit="in")
